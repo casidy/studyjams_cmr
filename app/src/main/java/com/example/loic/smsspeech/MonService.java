@@ -36,10 +36,10 @@ public class MonService extends Service implements OnInitListener {
 			 * C'est au moment ou listener d'android recoit un SMS que l'action s'effectue
 			*/
 			
-//			Je cr�e un intent qui va r�cup�rer le fournisseur de service qui g�re la r�ception des SMS
+//			Je cr�e un intent qui va recuperer le fournisseur de service qui g�re la r�ception des SMS
 			
 			if(intent.getAction().equals("android.provider.Telephony.SMS_RECEIVED")){
-				Bundle bundle = intent.getExtras();										// Je r�cup�re les donn�es de l'intent qui vient de d'arriver avec le SMS
+				Bundle bundle = intent.getExtras();										// Je recup�re les données de l'intent qui vient de d'arriver avec le SMS
 				if(bundle != null){
 					Object[] pdus = (Object[]) bundle.get("pdus");						// Je r�cup�re tous les messages bruts de la collection dans un tableau
 					SmsMessage[] messages = new SmsMessage[pdus.length];				// �� me donne un tableau en deux dimensions

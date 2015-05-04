@@ -4,7 +4,7 @@ public class Appelant {
 
 	private String oNom;
 	private String oNum;
-	
+	//getteurs et setteur
 	public String getoNom() {
 		return oNom;
 	}

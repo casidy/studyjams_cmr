@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		
-//		En fonction du bouton sur lequel on a cliqu� on choisit un ensemble d'actions
+//		En fonction du bouton sur lequel on a clique on choisit un ensemble d'actions
 		
 		switch (v.getId()) {
 		case R.id.btnActiver:				// Si le user clique sur le bouton "activer" sans avoir saisi une phrase une erreur est signal�e 
